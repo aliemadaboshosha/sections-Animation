@@ -1,0 +1,68 @@
+<html>
+    
+
+<head>
+<style>
+    @keyframes sectionanimation{
+        
+        25%{
+            
+            background-color: green;
+            
+            
+           
+            margin: 0px 0px 500px 500px;
+        
+        }
+        50%{
+            background-color: red;
+            margin: 500px 0px 0px 500px;
+           
+            
+        }
+        75%{background-color: yellow;
+        
+            margin: 500px 0px 0px 0px;
+    }
+        100%{ background-color: aqua;
+            margin: 0px 500px 500px 0px ;}
+
+
+
+
+
+    }
+
+
+    section{
+       
+        position: absolute;
+        
+        width: 100px;
+        height: 100px;
+        border: 2 solid black;
+        background-color: aqua;
+        margin: 0px 500px 500px 0px ;
+        animation: sectionanimation;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+    .ball{border-radius: 50px;
+    animation-duration: 8.5s;}
+    section:hover{
+        animation-play-state:paused;
+        transform: scale(5);
+    }
+body{padding:50px;}
+</style>
+
+</head>
+
+<body>
+
+<section></section>
+<section class="ball"></section>
+</body>
+
+
+</htm>
